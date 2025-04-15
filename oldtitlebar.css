@@ -1,4 +1,4 @@
-/* Restaurar a aparência da barra de título antiga do Discord */
+/* Restaurar a aparência da barra de título antiga do Discord com o logotipo no canto esquerdo */
 
 /* Ajustar a altura e o estilo geral da barra de título */
 .titleBar-AC4pGV {
@@ -22,27 +22,16 @@
     justify-content: center !important;
 }
 
-/* Esconder elementos desnecessários, como logotipos ou ícones extras */
+/* Exibir o logotipo do Discord no canto esquerdo */
 .wordmark-2iDDfm {
-    display: none !important; /* Remove o logotipo do Discord, se presente */
+    display: block !important; /* Garante que o logotipo seja exibido */
+    height: 16px !important; /* Ajusta a altura do logotipo para caber na barra */
+    margin-left: 8px !important; /* Pequena margem à esquerda para não colar na borda */
 }
 
-/* Esconder outros elementos da barra, exceto os botões de controle */
-.typeWindows-1za-n7 > div:not(.winButton-iRh8-Z) {
+/* Esconder outros elementos desnecessários na barra, exceto os botões e o logotipo */
+.typeWindows-1za-n7 > div:not(.winButton-iRh8-Z):not(.wordmark-2iDDfm) {
     display: none !important;
-}
-
-/* Exibir e centralizar o texto da barra (como "Mensagens diretas") */
-.titleBar-AC4pGV::after {
-    content: attr(aria-label); /* Usa o atributo aria-label para exibir o texto */
-    color: #b9bbbe !important; /* Cor do texto, típica do Discord */
-    font-size: 12px !important;
-    font-weight: 500 !important;
-    font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif !important; /* Fonte padrão do Discord */
-    position: absolute !important;
-    left: 50% !important;
-    top: 50% !important;
-    transform: translate(-50%, -50%) !important; /* Centraliza horizontal e verticalmente */
 }
 
 /* Garantir que a barra não tenha transições desnecessárias */
