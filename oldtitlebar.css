@@ -1,0 +1,65 @@
+/* Restaurar a aparência da barra de título antiga do Discord */
+
+/* Ajustar a altura e o estilo geral da barra de título */
+.titleBar-AC4pGV {
+    height: 22px !important; /* Altura semelhante à barra antiga */
+    padding: 0 !important;
+    margin: 0 !important;
+    background: #202225 !important; /* Cor de fundo escura típica do Discord antigo */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important; /* Garante que os elementos fiquem bem distribuídos */
+}
+
+/* Ajustar os botões de controle da janela (minimizar, maximizar, fechar) */
+.winButton-iRh8-Z {
+    height: 22px !important;
+    width: 22px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Esconder elementos desnecessários, como logotipos ou ícones extras */
+.wordmark-2iDDfm {
+    display: none !important; /* Remove o logotipo do Discord, se presente */
+}
+
+/* Esconder outros elementos da barra, exceto os botões de controle */
+.typeWindows-1za-n7 > div:not(.winButton-iRh8-Z) {
+    display: none !important;
+}
+
+/* Exibir e centralizar o texto da barra (como "Mensagens diretas") */
+.titleBar-AC4pGV::after {
+    content: attr(aria-label); /* Usa o atributo aria-label para exibir o texto */
+    color: #b9bbbe !important; /* Cor do texto, típica do Discord */
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif !important; /* Fonte padrão do Discord */
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important; /* Centraliza horizontal e verticalmente */
+}
+
+/* Garantir que a barra não tenha transições desnecessárias */
+.titleBar-AC4pGV {
+    transition: none !important;
+}
+
+/* Ajustar o contêiner da barra para evitar sobreposições */
+.typeWindows-1za-n7 {
+    height: 22px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* Garantir que os botões de controle fiquem à direita */
+.winButtonContainer-1jG5vL {
+    display: flex !important;
+    align-items: center !important;
+    margin-left: auto !important;
+}
