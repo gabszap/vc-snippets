@@ -1,0 +1,21 @@
+/* Aligned Chat Box and Typing indicator */
+.container_c48ade {
+  --custom-chat-input-margin-bottom: 22px;
+}
+:root {
+  --custom-channel-textarea-text-area-height: 42px;
+}
+.visual-refresh {
+    --custom-channel-textarea-text-area-height: 60px;
+    .form_f75fb0 {
+        display: flex;
+        flex-direction: column;
+    }
+    .channelTextArea_f75fb0 {
+        margin-bottom: 10px;
+    }
+    .base_b88801 {
+        position: static;
+        order: -1;
+    }
+}
