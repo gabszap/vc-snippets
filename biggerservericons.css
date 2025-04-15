@@ -1,6 +1,6 @@
 /*Guild Icon size fix*/
 .visual-refresh {
-    --size: 48;
+    --size: 45;
     /* visual refresh is 40, old discord is 48. */
     --guildbar-avatar-size: calc(var(--size) * 1px);
     --guildbar-folder-size: var(--g-48);
