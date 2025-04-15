@@ -1,0 +1,100 @@
+/*Guild Icon size fix*/
+.visual-refresh {
+    --size: 48;
+    /* visual refresh is 40, old discord is 48. */
+    --guildbar-avatar-size: calc(var(--size) * 1px);
+    --guildbar-folder-size: var(--g-48);
+    --g-48: calc(var(--guildbar-avatar-size) + 8px);
+    --g-19-r: calc((var(--size) / 2 - 1) / var(--size) * 40px);
+    --g-40-r: calc(var(--guildbar-avatar-size) / (var(--size) + 8) * 48);
+    --g-48-r: calc(var(--guildbar-avatar-size) * 48 / 40);
+    --g-56-r: calc(var(--g-48) * 56 / 48);
+    --g-4-r: calc((var(--g-48-r) - var(--guildbar-avatar-size)) / -2);
+    --g-4-r-2: calc((var(--g-56-r) - var(--g-48)) / -2);
+
+    .folderIcon__48112>.wrapper_cc5dd2 {
+        width: var(--g-48) !important;
+        height: var(--g-48) !important;
+    }
+
+    .folderIcon__48112>.wrapper_cc5dd2>.svg_cc5dd2 {
+        width: var(--g-56-r);
+        height: var(--g-56-r);
+        top: var(--g-4-r-2);
+        left: var(--g-4-r-2);
+    }
+
+    .folderIcon__48112>.wrapper_cc5dd2>.svg_cc5dd2>foreignObject {
+        width: calc();
+    }
+
+    .svg_cc5dd2 {
+        width: var(--g-48-r);
+        height: var(--g-48-r);
+        top: var(--g-4-r);
+        left: var(--g-4-r);
+    }
+
+    .wrapper__6e9f8,
+    .icon__6e9f8,
+    .childWrapper__6e9f8 {
+        width: 40px;
+        height: 40px;
+    }
+
+    .folder__48112,
+    .folderIconWrapper__48112 {
+        width: 48px;
+        height: 48px;
+    }
+
+    .expandedFolderIconWrapper__48112 {
+        width: var(--g-40-r);
+        height: var(--g-40-r);
+        margin: 0;
+    }
+
+    .closedFolderIconWrapper__48112 {
+        width: var(--g-40-r);
+        height: var(--g-40-r);
+    }
+
+    .guildIcon__48112 {
+        width: var(--g-19-r);
+        height: var(--g-19-r);
+    }
+
+    .stack_dbd263 {
+        height: auto !important;
+        padding-bottom: 4px !important;
+    }
+
+    .tutorialContainer__1f388 .numberBadge__2b1f5 {
+        outline: 2px solid var(--bg-base-tertiary);
+        border-radius: 50%;
+    }
+
+    .unreadMentionsIndicatorBottom_ef3116,
+    .unreadMentionsIndicatorTop_ef3116 {
+        width: calc(var(--guildbar-avatar-size) + var(--custom-guild-list-padding) * 2);
+        padding: calc(var(--custom-guild-list-padding) / 2);
+    }
+    
+    /*Target the Add Server button by its known aria-label (alignment)*/
+    [aria-label="Add a Server"] {
+        width: 40px !important;
+        height: 40px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*Target the Discover button with a partial aria-label match (alignment)*/
+    [aria-label*="Discover"] {
+        width: 40px !important;
+        height: 40px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
