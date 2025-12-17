@@ -1,6 +1,7 @@
 /*FANCY MENTION/REPLY GRADIENT COLORS*/
 /*Fork of Burning Stone*/
-.mentioned__5126c {
+
+._5126c0cd07f243a0-mentioned {
     position: relative;
     border: none !important;
     background-color: transparent;
@@ -8,7 +9,7 @@
     border-radius: 0px 4px 4px 0px;
 }
 
-.mentioned__5126c::before {
+._5126c0cd07f243a0-mentioned::before {
     content: "";
     position: absolute;
     display: block;
@@ -21,8 +22,8 @@
     z-index: 1;
 }
 
-.message__5126c.mentioned__5126c.selected__5126c,
-.mouse-mode.full-motion .message__5126c.mentioned__5126c:hover {
+._5126c0cd07f243a0-message._5126c0cd07f243a0-mentioned._5126c0cd07f243a0-selected,
+.mouse-mode.full-motion ._5126c0cd07f243a0-message._5126c0cd07f243a0-mentioned:hover {
     background: linear-gradient(
         to right,
         rgba(111, 106, 246, 0.2), 
@@ -30,7 +31,7 @@
     );
 }
 
-.replying__5126c {
+._5126c0cd07f243a0-replying {
     position: relative;
     border: none !important;
     border-radius: 4px;
@@ -38,7 +39,7 @@
     background-image: linear-gradient(to right, rgba(111, 106, 246, 0.25), rgba(0, 0, 0, 0));
 }
 
-.replying__5126c::before {
+._5126c0cd07f243a0-replying::before {
     content: "";
     position: absolute;
     display: block;
@@ -51,8 +52,8 @@
     z-index: 1;
 }
 
-.message__5126c.replying__5126c.selected__5126c,
-.mouse-mode.full-motion .message__5126c.replying__5126c:hover {
+._5126c0cd07f243a0-message._5126c0cd07f243a0-replying._5126c0cd07f243a0-selected,
+.mouse-mode.full-motion ._5126c0cd07f243a0-message._5126c0cd07f243a0-replying:hover {
     background: linear-gradient(
         to right,
         rgba(111, 106, 246, 0.3), 
@@ -60,14 +61,14 @@
     );
 }
 
-.flash__03436 {
+._034365f2217df5de-flash {
     background-image: transparent
 }
 
-.flash__03436[data-flash=true] {
+._034365f2217df5de-flash[data-flash=true] {
     background-image: linear-gradient(to right, rgba(111, 106, 246, 0.3), rgba(0, 0, 0, 0));
 }
 
-.full-motion .flash__03436 {
+.full-motion ._034365f2217df5de-flash {
     transition: background-color .2s ease
 }
