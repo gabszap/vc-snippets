@@ -1,45 +1,15 @@
 /*FANCY MENTION/REPLY GRADIENT COLORS*/
 /*Fork of Burning Stone*/
 
-._5126c0cd07f243a0-mentioned {
+.mentioned__5126c {
     position: relative;
     border: none !important;
     background-color: transparent;
-    background-image: linear-gradient(to right, #6f6af626, #00000000); 
+    background-image: linear-gradient(to right, #6f6af626, #00000000);
     border-radius: 0px 4px 4px 0px;
 }
 
-._5126c0cd07f243a0-mentioned::before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 3px;
-    background-color: #6e6af6; 
-    box-shadow: 0 0 12px 1px #6e6af6;
-    z-index: 1;
-}
-
-._5126c0cd07f243a0-message._5126c0cd07f243a0-mentioned._5126c0cd07f243a0-selected,
-.mouse-mode.full-motion ._5126c0cd07f243a0-message._5126c0cd07f243a0-mentioned:hover {
-    background: linear-gradient(
-        to right,
-        rgba(111, 106, 246, 0.2), 
-        var(--message-background-hover)
-    );
-}
-
-._5126c0cd07f243a0-replying {
-    position: relative;
-    border: none !important;
-    border-radius: 4px;
-    background-color: transparent;
-    background-image: linear-gradient(to right, rgba(111, 106, 246, 0.25), rgba(0, 0, 0, 0));
-}
-
-._5126c0cd07f243a0-replying::before {
+.mentioned__5126c::before {
     content: "";
     position: absolute;
     display: block;
@@ -52,23 +22,49 @@
     z-index: 1;
 }
 
-._5126c0cd07f243a0-message._5126c0cd07f243a0-replying._5126c0cd07f243a0-selected,
-.mouse-mode.full-motion ._5126c0cd07f243a0-message._5126c0cd07f243a0-replying:hover {
-    background: linear-gradient(
-        to right,
-        rgba(111, 106, 246, 0.3), 
-        var(--message-background-hover)
-    );
+.message__5126c.mentioned__5126c.selected__5126c,
+.mouse-mode.full-motion .message__5126c.mentioned__5126c:hover {
+    background: linear-gradient(to right,
+            rgba(111, 106, 246, 0.2),
+            var(--message-background-hover));
 }
 
-._034365f2217df5de-flash {
+.replying__5126c {
+    position: relative;
+    border: none !important;
+    border-radius: 4px;
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(111, 106, 246, 0.25), rgba(0, 0, 0, 0));
+}
+
+.replying__5126c::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #6e6af6;
+    box-shadow: 0 0 12px 1px #6e6af6;
+    z-index: 1;
+}
+
+.message__5126c.replying__5126c.selected__5126c,
+.mouse-mode.full-motion .message__5126c.replying__5126c:hover {
+    background: linear-gradient(to right,
+            rgba(111, 106, 246, 0.3),
+            var(--message-background-hover));
+}
+
+.flash__034365 {
     background-image: transparent
 }
 
-._034365f2217df5de-flash[data-flash=true] {
+.flash__034365[data-flash=true] {
     background-image: linear-gradient(to right, rgba(111, 106, 246, 0.3), rgba(0, 0, 0, 0));
 }
 
-.full-motion ._034365f2217df5de-flash {
+.full-motion .flash__034365 {
     transition: background-color .2s ease
 }
