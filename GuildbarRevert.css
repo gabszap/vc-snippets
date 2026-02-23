@@ -159,3 +159,4 @@ nav[class*="guilds_"] {
         --guildbar-avatar-size: var(--guildbar-folder-size);
         --blob-scale: var(--folder-blob-scale);
     }
+
